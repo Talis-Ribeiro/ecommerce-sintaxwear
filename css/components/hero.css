@@ -1,0 +1,12 @@
+.hero-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../../images/a70c52ea4ec11da7d6f6e989b2db346fd6660e94.jpg);
+  background-size: cover;
+  background-position: center;  
+  height: 100vh;  
+  border-radius: 20px;
+  padding: 1.2rem;
+
+}
