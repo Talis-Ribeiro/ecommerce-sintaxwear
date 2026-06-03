@@ -12,7 +12,7 @@
   background-image: url(../../images/a70c52ea4ec11da7d6f6e989b2db346fd6660e94.jpg);
   background-size: cover;
   border-radius: 20px;
-  margin: 0 40px
+  margin: 0;
 }
 .hero-content{
    width: 350px;
@@ -35,7 +35,6 @@
   font-weight: 500;
   width: max-content;
   letter-spacing: 3px;
-  background-color: #6329A2;
 }
 
 .hero-buttons{

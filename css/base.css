@@ -1,6 +1,18 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body{
+  margin: 0;
   font-family: var(--font-principal);
   color: #333333;
-  background-color: #ffffff;
- 
+  background-color: #f7f9fc;
+}
+
+.page-main{
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 2.5rem 1rem;
 }
