@@ -1,9 +1,81 @@
+.card{
+  border-radius: 30px;
+}
+
+
+.destaque{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+
+  grid-area: top1;
+  background: url("../images/logo/top-grid.jpg") center no-repeat;
+  background-size: cover;
+  color: #ffffff;
+  text-align: center;
+  position: relative;
+ 
+}
+.top1-content{
+  display: flex;
+  flex-direction: column;
+
+  
+}
+.top1-content .grid-title{
+  font-size: 1.25rem;
+  color: #EDEDED;
+  margin-bottom: 10px;
+}
+
+.top1-content .grid-subtitle{
+  font-size: 1.5rem;
+  color: #EDEDED;
+  margin-bottom: 10px;
+}
+
+.cta-group{
+display: flex; 
+gap: 10px;
+
+}
+.top2{
+  grid-area: top2;
+  background:url(../images/logo/roxo-verde.jpg) center no-repeat;
+  background-size: cover;
+
+}
+.model{
+  grid-area: model;
+  background:url("../images/logo/model.jpg") center no-repeat;
+    background-size: cover;
+
+}
+.mid-right{
+  grid-area: mid-right;
+ background:url("../images/logo/moderno.jpg") center no-repeat;
+    background-size: cover;
+}
+.bottom-right{
+  grid-area: bottom-right;
+ background:url("../images/logo/futurista.jpg") center no-repeat;
+    background-size: cover;
+}
+.bottom-left{
+  grid-area: bottom-left;
+ background:url("../images/logo/preto-azul.jpg") center no-repeat;
+    background-size: cover;
+}
 .grid-section{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 300px);
-  gap: 20px;
-}
-.card{
-  
+  grid-template-areas:
+   "top1 top1 top2 top2"
+   "top1 top1 model mid-right"
+   "bottom-left bottom-left model bottom-right";
+  gap: 30px;
+  margin-top: 30px;
 }
