@@ -25,20 +25,34 @@
         <img src="./images/logo/Logo.svg" alt="SyntaxWear">
       </a>
     </h1>
+
+    <input type="checkbox" class="menu-toggle" id="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">
+      <img src="./images/icons/hamburguer.svg" alt="menu-mobile">
+    </label>
+
     <!-- <nav class="top-nav"> analisar para usar ou não usar -->
-    <ul class="nav-center">
-      <li><a href="#">Masculino</a></li>
-      <li><a href="#">Feminino</a></li>
-      <li><a href="#">Outlet</a></li>
-    </ul>
-    <ul class="nav-center nav-right">
-      <li><a href="#">Nossas lojas</a></li>
-      <li><a href="#">Sobre</a></li>
-      <li><a href="#"><img src="./images/icons/user.svg" alt=""></a></li>
-      <li><a href="#"><img src="./images/icons/help.svg.svg" alt=""></a></li>
-      <li><a href="#"> <img src="./images/icons/bag.svg.svg" alt=""></a></li>
-    </ul>
-    <!-- </nav> -->
+
+    <nav class="nav-container">
+
+      <ul class="nav-center">
+        <li><a href="#">Masculino</a></li>
+        <li><a href="#">Feminino</a></li>
+        <li><a href="#">Outlet</a></li>
+      </ul>
+
+
+
+      <ul class="nav-center nav-right">
+        <li><a href="#">Nossas lojas</a></li>
+        <li><a href="#">Sobre</a></li>
+        <li><a href="#"><img src="./images/icons/user.svg" alt=""></a></li>
+        <li><a href="#"><img src="./images/icons/help.svg.svg" alt=""></a></li>
+        <li><a href="#"> <img src="./images/icons/bag.svg.svg" alt=""></a></li>
+      </ul>
+      <!-- </nav> -->
+
+    </nav>
   </header>
 
 
@@ -115,76 +129,77 @@
     </section>
 
   </main>
-  <footer class="footer-container" >
+  <footer class="footer-container">
     <div class="section-top-footer">
-    <div class="main-footer">
-      <h2 class="footer-title">Inscreva-se em nosso e-mail</h2>
+      <div class="main-footer">
+        <h2 class="footer-title">Inscreva-se em nosso e-mail</h2>
         <form class="footer-form" action="#" method="post">
-          <label for="footer-email" class="visually-hidden" ></label>
+          <label for="footer-email" class="visually-hidden"></label>
           <input id="footer-email" type="email" name="email" placeholder="email@email.com" required>
         </form>
         <div class="footer-social">
-        <span>Redes sociais</span>
-        <ul class="footer-social-list">
-          <li><a href="#" aria-label="Instagram"><img src="./images/icons/insta.svg" alt="ícone do instagram"></a></li>
-          <li><a href="#" aria-label="Facebook"><img src="./images/icons/face.svg" alt="ícone do facebook"></a></li>
-          <li><a href="#" aria-label="whatsapp"><img src="./images/icons/whats.svg" alt="ícone do Whathsapp"></a></li>
-        </ul>
+          <span>Redes sociais</span>
+          <ul class="footer-social-list">
+            <li><a href="#" aria-label="Instagram"><img src="./images/icons/insta.svg" alt="ícone do instagram"></a>
+            </li>
+            <li><a href="#" aria-label="Facebook"><img src="./images/icons/face.svg" alt="ícone do facebook"></a></li>
+            <li><a href="#" aria-label="whatsapp"><img src="./images/icons/whats.svg" alt="ícone do Whathsapp"></a></li>
+          </ul>
+        </div>
       </div>
+      <!-- <div class="footer-top"> -->
+      <div class="footer-links">
+        <nav class="footer-column">
+          <h3>Masculino</h3>
+          <ul>
+            <li><a href="#">Casual</a></li>
+            <li><a href="#">Esporte</a></li>
+            <li><a href="#">Moderno</a></li>
+            <li><a href="#">Futurista</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer-column">
+          <h3 id="footer-feminino">Feminino</h3>
+          <ul>
+            <li><a href="#">Casual</a></li>
+            <li><a href="#">Esporte</a></li>
+            <li><a href="#">Moderno</a></li>
+            <li><a href="#">Futurista</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer-column">
+          <h3 id="footer-outlet">Outlet</h3>
+          <ul>
+            <li><a href="#">Masculino</a></li>
+            <li><a href="#">Feminino</a></li>
+            <li><a href="#">Moderno</a></li>
+            <li><a href="#">Futurista</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer-column">
+          <h3 id="footer-lojas">Nossas lojas</h3>
+          <ul>
+            <li><a href="#">Loja física</a></li>
+            <li><a href="#">Loja online</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer-column">
+          <h3 id="footer-sobre">Sobre</h3>
+          <ul>
+            <li><a href="#">Quem somos</a></li>
+            <li><a href="#">Missão</a></li>
+          </ul>
+        </nav>
+      </div>
+
     </div>
-    <!-- <div class="footer-top"> -->
-    <div class="footer-links">
-      <nav class="footer-column">
-        <h3>Masculino</h3>
-        <ul>
-          <li><a href="#">Casual</a></li>
-          <li><a href="#">Esporte</a></li>
-          <li><a href="#">Moderno</a></li>
-          <li><a href="#">Futurista</a></li>
-        </ul>
-      </nav>
-
-      <nav class="footer-column">
-        <h3 id="footer-feminino">Feminino</h3>
-        <ul>
-          <li><a href="#">Casual</a></li>
-          <li><a href="#">Esporte</a></li>
-          <li><a href="#">Moderno</a></li>
-          <li><a href="#">Futurista</a></li>
-        </ul>
-      </nav>
-
-      <nav class="footer-column">
-        <h3 id="footer-outlet">Outlet</h3>
-        <ul>
-          <li><a href="#">Masculino</a></li>
-          <li><a href="#">Feminino</a></li>
-          <li><a href="#">Moderno</a></li>
-          <li><a href="#">Futurista</a></li>
-        </ul>
-      </nav>
-
-      <nav class="footer-column">
-        <h3 id="footer-lojas">Nossas lojas</h3>
-        <ul>
-          <li><a href="#">Loja física</a></li>
-          <li><a href="#">Loja online</a></li>
-        </ul>
-      </nav>
-
-      <nav class="footer-column">
-        <h3 id="footer-sobre">Sobre</h3>
-        <ul>
-          <li><a href="#">Quem somos</a></li>
-          <li><a href="#">Missão</a></li>
-        </ul>
-      </nav>
-    </div>
-    
-</div>
- <!-- </div>      -->
+    <!-- </div>      -->
     <div class="footer-bottom">
-      
+
       <p class="footer-copy">Copyright. All Rights Reserved</p>
     </div>
   </footer>
