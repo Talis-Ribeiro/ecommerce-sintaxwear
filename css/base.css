@@ -16,3 +16,9 @@ body{
   margin: 0 auto;
   padding: 2.5rem 1rem;
 }
+
+@media (max-width:1280px) {
+  .page-main{
+    padding: 0.625rem;
+  }
+}

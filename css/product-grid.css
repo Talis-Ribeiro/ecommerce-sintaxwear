@@ -79,3 +79,30 @@ gap: 10px;
   gap: 30px;
   margin-top: 30px;
 }
+
+ @media (max-width:768px){
+  .grid-section{
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(5,auto);
+  grid-template-areas:
+   "top1 top1"
+   "bottom-left bottom-left"   
+   "model mid-right"
+    "model bottom-right"
+    "top2 top2";
+      max-width: 100%;
+      gap: 15px;
+}
+
+.destaque{
+  min-height:500px;
+}
+
+.model{
+  min-height: 370px;
+}
+
+.top2, .mid-right, .bottom-right, .bottom-left{
+  min-height: 1-+90px;
+}
+    }
