@@ -1,5 +1,9 @@
 .card{
   border-radius: 30px;
+  min-height: 280px;
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
 }
 
 
@@ -49,9 +53,9 @@ gap: 10px;
 }
 .model{
   grid-area: model;
-  background:url("../images/logo/model.jpg") center no-repeat;
-    background-size: cover;
-
+  background: url("../images/logo/model-mobile.jpg") center  no-repeat;
+  background-size: cover;
+  height: 780px;
 }
 .mid-right{
   grid-area: mid-right;
@@ -80,29 +84,51 @@ gap: 10px;
   margin-top: 30px;
 }
 
- @media (max-width:768px){
+@media (max-width:1024px){
   .grid-section{
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(5,auto);
-  grid-template-areas:
-   "top1 top1"
-   "bottom-left bottom-left"   
-   "model mid-right"
-    "model bottom-right"
-    "top2 top2";
-      max-width: 100%;
-      gap: 15px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, minmax(260px, auto));
+    grid-template-areas:
+      "top1 top2"
+      "top1 model"
+      "mid-right bottom-left"
+      "bottom-right bottom-right";
+    gap: 20px;
+  }
+
+  .destaque{
+    min-height: 420px;
+  }
 }
 
-.destaque{
-  min-height:500px;
-}
+@media (max-width:768px){
+  .grid-section{
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "top1"
+      "top2"
+      "model"
+      "mid-right"
+      "bottom-left"
+      "bottom-right";
+    width: 100%;
+    gap: 16px;
+  }
 
-.model{
-  min-height: 370px;
-}
+  .destaque,
+  .top2,
+  .model,
+  .mid-right,
+  .bottom-right,
+  .bottom-left{
+    min-height: 260px;
+  }
 
-.top2, .mid-right, .bottom-right, .bottom-left{
-  min-height: 1-+90px;
+  .top2,
+  .mid-right,
+  .bottom-right,
+  .bottom-left{
+    min-height: 220px;
+  }
 }
-    }

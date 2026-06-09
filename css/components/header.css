@@ -1,22 +1,23 @@
 .header{
-  background-color: black;
-  position:fixed;
-  top:60px;
-  left:50%;
-  transform: translate(-50%);
-  width: 1260px;
+  background-color: #ffffff;
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 40px);
+  max-width: 1260px;
   border-radius: 15px;
   z-index: 999;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.255rem 1.25rem;
+  padding: 0.75rem 1rem;
   gap: 1rem;
-  background-color: #ffffff;
 }
 
 .logo img{
-  padding: 1.5rem 1.75rem;
+  max-height: 60px;
+  width: auto;
 }
 
  .nav-center, .nav-right{
@@ -80,13 +81,14 @@
     position: fixed;
     top: 0;
     right: -100%;
-    width: 200px;
+    width: min(280px, 80%);
     flex-direction: column;
-    padding: 80px 20px 20px;
+    padding: 84px 20px 20px;
     background-color: #ffffff;
-    gap: 2rem;
+    gap: 1.5rem;
     transition: right 0.3s ease;
     align-items: flex-start;
+    min-height: 100vh;
   }
 
   .nav-center {
