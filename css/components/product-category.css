@@ -2,7 +2,6 @@
   display: flex;
   justify-content: space-between;
   padding: 40px 0 0;
-  flex-wrap: wrap;
   gap: 1.5rem;
 }
 
@@ -20,6 +19,7 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  ;
 }
   .category-name{
     position: absolute;
@@ -67,6 +67,9 @@
     .categories-section{
       justify-content: center;
       gap: 1rem;
+      flex-wrap: wrap;
+
+
     }
 
     .category-card{
